@@ -1,0 +1,1496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FleetraShip - Smart Logistics & Shipping Solutions | Starting ₹24</title>
+    <meta name="description" content="FleetraShip offers enterprise-grade logistics solutions for ecommerce businesses. Get discounted shipping rates starting ₹24. 50,000+ happy customers, 150+ countries served.">
+    <meta name="keywords" content="logistics, shipping, courier, ecommerce fulfillment, freight forwarding, warehousing, FleetraShip">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Swiper.js CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+        
+        /* Hero Background Animation */
+        .hero-bg {
+            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #60a5fa 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero-bg::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px),
+                linear-gradient(0deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            animation: gridMove 20s linear infinite;
+        }
+        
+        @keyframes gridMove {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(50px, 50px); }
+        }
+        
+        .floating-icon {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .pulse-slow {
+            animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+        }
+        
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Card hover effects */
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        
+        /* Counter animation */
+        .counter {
+            font-variant-numeric: tabular-nums;
+        }
+        
+        /* Gradient text */
+        .gradient-text {
+            background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        /* FAQ Accordion */
+        .faq-item summary {
+            cursor: pointer;
+            list-style: none;
+        }
+        
+        .faq-item summary::-webkit-details-marker {
+            display: none;
+        }
+        
+        /* Swiper customization */
+        .swiper-button-next, .swiper-button-prev {
+            color: #3b82f6;
+        }
+        
+        .swiper-pagination-bullet-active {
+            background: #3b82f6;
+        }
+    </style>
+</head>
+<body class="bg-white">
+
+    <!-- ========================================
+         NAVIGATION HEADER
+    ======================================== -->
+    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center">
+                    <i class="fas fa-shipping-fast text-blue-600 text-3xl mr-2"></i>
+                    <span class="text-2xl font-bold text-gray-900">Fleetra<span class="text-blue-600">Ship</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#services" class="text-gray-700 hover:text-blue-600 font-medium">Services</a>
+                    <a href="#features" class="text-gray-700 hover:text-blue-600 font-medium">Features</a>
+                    <a href="#why-us" class="text-gray-700 hover:text-blue-600 font-medium">Why Us</a>
+                    <a href="#testimonials" class="text-gray-700 hover:text-blue-600 font-medium">Testimonials</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium">Contact</a>
+                </div>
+                <div class="flex space-x-4">
+                    <a href="#contact" class="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ========================================
+         HERO SECTION - ABOVE THE FOLD
+    ======================================== -->
+    <section class="hero-bg pt-24 pb-20 relative">
+        <!-- Floating animated elements -->
+        <div class="absolute top-20 left-10 floating-icon text-white text-4xl opacity-20">
+            <i class="fas fa-box"></i>
+        </div>
+        <div class="absolute top-40 right-20 floating-icon text-white text-5xl opacity-20" style="animation-delay: 1s;">
+            <i class="fas fa-truck"></i>
+        </div>
+        <div class="absolute bottom-20 left-1/4 floating-icon text-white text-3xl opacity-20" style="animation-delay: 2s;">
+            <i class="fas fa-plane"></i>
+        </div>
+        <div class="absolute bottom-32 right-1/3 floating-icon text-white text-4xl opacity-20" style="animation-delay: 1.5s;">
+            <i class="fas fa-ship"></i>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center">
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+                    Smart Logistics Solutions<br>
+                    <span class="text-yellow-300">Starting Just ₹24</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
+                    Enterprise-grade shipping platform for ecommerce businesses. Multi-carrier aggregation, real-time tracking, and automated fulfillment.
+                </p>
+                
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row justify-center gap-4 mb-12">
+                    <a href="#contact" class="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-gray-100 transition shadow-lg inline-flex items-center justify-center">
+                        <i class="fas fa-rocket mr-2"></i>
+                        Get Started Now
+                    </a>
+                    <a href="#pricing" class="bg-green-500 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-600 transition shadow-lg inline-flex items-center justify-center">
+                        <i class="fas fa-tag mr-2"></i>
+                        Get Discounted Prices
+                    </a>
+                </div>
+                
+                <!-- Trust Badges -->
+                <div class="flex flex-wrap justify-center gap-6 text-white text-sm">
+                    <div class="flex items-center">
+                        <i class="fas fa-shield-alt mr-2 text-green-300"></i>
+                        <span>100% Secure</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-star mr-2 text-yellow-300"></i>
+                        <span>4.8/5 Rating</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-headset mr-2 text-blue-300"></i>
+                        <span>24/7 Support</span>
+                    </div>
+                    <div class="flex items-center">
+                        <i class="fas fa-globe mr-2 text-purple-300"></i>
+                        <span>150+ Countries</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         TRUST INDICATORS - STATS
+    ======================================== -->
+    <section class="bg-white py-16 shadow-lg relative -mt-8 mx-4 md:mx-8 lg:mx-16 rounded-2xl">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-users text-blue-600 text-2xl"></i>
+                    </div>
+                    <div class="text-4xl font-bold text-gray-900 counter mb-2" data-target="50000">0</div>
+                    <div class="text-gray-600 font-medium">Happy Customers</div>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-globe-americas text-green-600 text-2xl"></i>
+                    </div>
+                    <div class="text-4xl font-bold text-gray-900 counter mb-2" data-target="150">0</div>
+                    <div class="text-gray-600 font-medium">Countries Served</div>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-map-marker-alt text-purple-600 text-2xl"></i>
+                    </div>
+                    <div class="text-4xl font-bold text-gray-900 counter mb-2" data-target="29000">0</div>
+                    <div class="text-gray-600 font-medium">Pin Codes Covered</div>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-clock text-orange-600 text-2xl"></i>
+                    </div>
+                    <div class="text-4xl font-bold text-gray-900 mb-2">99.9%</div>
+                    <div class="text-gray-600 font-medium">On-Time Delivery</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         ABOUT FLEETRASHIP
+    ======================================== -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">
+                        About <span class="gradient-text">FleetraShip</span>
+                    </h2>
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        FleetraShip is India's leading logistics technology platform, connecting businesses with premium courier partners to deliver seamless shipping experiences. We aggregate multiple carriers, provide real-time rate comparison, and offer enterprise-grade tracking solutions.
+                    </p>
+                    <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+                        Whether you're a D2C brand, marketplace seller, or enterprise exporter, FleetraShip empowers you with transparent pricing, scalable infrastructure, and dedicated support to grow your business globally.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4 mb-8">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 text-xl mr-3 mt-1"></i>
+                            <div>
+                                <div class="font-semibold text-gray-900">Competitive Rates</div>
+                                <div class="text-sm text-gray-600">Up to 50% savings</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 text-xl mr-3 mt-1"></i>
+                            <div>
+                                <div class="font-semibold text-gray-900">Real-Time Tracking</div>
+                                <div class="text-sm text-gray-600">24/7 visibility</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 text-xl mr-3 mt-1"></i>
+                            <div>
+                                <div class="font-semibold text-gray-900">Global Reach</div>
+                                <div class="text-sm text-gray-600">150+ countries</div>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 text-xl mr-3 mt-1"></i>
+                            <div>
+                                <div class="font-semibold text-gray-900">Easy Integration</div>
+                                <div class="text-sm text-gray-600">API & plugins</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-700 transition inline-block">
+                        Learn More
+                    </a>
+                </div>
+                
+                <div class="relative">
+                    <div class="bg-gradient-to-br from-blue-500 to-blue-700 rounded-2xl p-8 shadow-2xl">
+                        <img src="https://placehold.co/600x400/1e40af/ffffff?text=Logistics+Dashboard" alt="FleetraShip Platform Dashboard" class="rounded-lg shadow-lg w-full">
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl">
+                        <div class="text-3xl font-bold text-blue-600 mb-1">₹24</div>
+                        <div class="text-sm text-gray-600">Starting Price</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         REVOLUTIONIZING LOGISTICS
+    ======================================== -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    Revolutionizing <span class="gradient-text">Logistics</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Powered by cutting-edge technology and strategic partnerships to deliver excellence at every step
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6 rounded-xl hover:bg-gray-50 transition">
+                    <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-microchip text-blue-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Advanced Technology</h3>
+                    <p class="text-gray-600">
+                        AI-powered route optimization and automated dispatch systems for maximum efficiency
+                    </p>
+                </div>
+                
+                <div class="text-center p-6 rounded-xl hover:bg-gray-50 transition">
+                    <div class="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-handshake text-green-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Premium Partnerships</h3>
+                    <p class="text-gray-600">
+                        Exclusive tie-ups with leading courier providers for best-in-class service levels
+                    </p>
+                </div>
+                
+                <div class="text-center p-6 rounded-xl hover:bg-gray-50 transition">
+                    <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-dollar-sign text-purple-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Transparent Pricing</h3>
+                    <p class="text-gray-600">
+                        No hidden charges. Compare rates across carriers and choose what works best
+                    </p>
+                </div>
+                
+                <div class="text-center p-6 rounded-xl hover:bg-gray-50 transition">
+                    <div class="bg-orange-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-headset text-orange-600 text-3xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Dedicated Support</h3>
+                    <p class="text-gray-600">
+                        24/7 customer support team ready to assist with all your shipping needs
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CORE ADVANTAGES
+    ======================================== -->
+    <section class="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    Core <span class="gradient-text">Advantages</span>
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Why thousands of businesses trust FleetraShip
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                    <div class="flex items-start mb-6">
+                        <div class="bg-blue-100 p-4 rounded-xl mr-4">
+                            <i class="fas fa-bolt text-blue-600 text-3xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Lightning-Fast Shipping</h3>
+                            <p class="text-gray-600">
+                                Same-day pickup and express delivery options available across major cities. Get your products to customers faster than ever.
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            Same-day & next-day delivery
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            Priority processing for urgent shipments
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            Real-time ETA updates
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                    <div class="flex items-start mb-6">
+                        <div class="bg-green-100 p-4 rounded-xl mr-4">
+                            <i class="fas fa-shield-alt text-green-600 text-3xl"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-2">Secure Handling & Insurance</h3>
+                            <p class="text-gray-600">
+                                End-to-end insurance coverage and secure handling protocols ensure your shipments arrive safely every time.
+                            </p>
+                        </div>
+                    </div>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            Comprehensive insurance coverage
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            Tamper-proof packaging solutions
+                        </li>
+                        <li class="flex items-center text-gray-700">
+                            <i class="fas fa-check text-green-500 mr-3"></i>
+                            99.9% delivery success rate
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         OUR SERVICES - SWIPER CAROUSEL
+    ======================================== -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    Our <span class="gradient-text">Services</span>
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Comprehensive logistics solutions tailored to your business needs
+                </p>
+            </div>
+            
+            <!-- Swiper Container -->
+            <div class="swiper servicesSwiper pb-12">
+                <div class="swiper-wrapper">
+                    <!-- Service 1: Ground Shipping -->
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden card-hover">
+                            <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Ground+Shipping+Truck" alt="Ground Shipping" class="w-full h-64 object-cover">
+                            <div class="p-8">
+                                <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                                    <i class="fas fa-truck text-blue-600 text-2xl"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-3">Ground Shipping</h3>
+                                <p class="text-gray-600 mb-4">
+                                    Reliable surface transportation across India with extensive network coverage. Cost-effective solutions for bulk shipments.
+                                </p>
+                                <ul class="space-y-2 text-sm text-gray-700">
+                                    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Pan-India coverage</li>
+                                    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Economical pricing</li>
+                                    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Bulk shipment discounts</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 2: Air Freight -->
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden card-hover">
+                            <img src="https://placehold.co/600x400/10b981/ffffff?text=Air+Freight+Aircraft" alt="Air Freight" class="w-full h-64 object-cover">
+                            <div class="p-8">
+                                <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                                    <i class="fas fa-plane text-green-600 text-2xl"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-3">Air Freight</h3>
+                                <p class="text-gray-600 mb-4">
+                                    Express air cargo services for time-sensitive deliveries. Domestic and international air shipping solutions.
+                                </p>
+                                <ul class="space-y-2 text-sm text-gray-700">
+                                    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Fastest delivery times</li>
+                                    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Global connectivity</li>
+                                    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Priority handling</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 3: Ocean Freight -->
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden card-hover">
+                            <img src="https://placehold.co/600x400/8b5cf6/ffffff?text=Ocean+Freight+Ship" alt="Ocean Freight" class="w-full h-64 object-cover">
+                            <div class="p-8">
+                                <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                                    <i class="fas fa-ship text-purple-600 text-2xl"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-3">Ocean Freight</h3>
+                                <p class="text-gray-600 mb-4">
+                                    Cost-effective sea cargo solutions for international shipping. Full container load (FCL) and less than container load (LCL) options.
+                                </p>
+                                <ul class="space-y-2 text-sm text-gray-700">
+                                    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Global port coverage</li>
+                                    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>FCL & LCL options</li>
+                                    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Economical bulk shipping</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 4: Warehousing -->
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden card-hover">
+                            <img src="https://placehold.co/600x400/f59e0b/ffffff?text=Warehousing+Facility" alt="Warehousing" class="w-full h-64 object-cover">
+                            <div class="p-8">
+                                <div class="bg-orange-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                                    <i class="fas fa-warehouse text-orange-600 text-2xl"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-3">Warehousing</h3>
+                                <p class="text-gray-600 mb-4">
+                                    State-of-the-art storage facilities with inventory management systems. Strategic locations across major cities.
+                                </p>
+                                <ul class="space-y-2 text-sm text-gray-700">
+                                    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Climate-controlled storage</li>
+                                    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Real-time inventory tracking</li>
+                                    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Flexible storage plans</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 5: Packaging -->
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden card-hover">
+                            <img src="https://placehold.co/600x400/ec4899/ffffff?text=Packaging+Solutions" alt="Packaging" class="w-full h-64 object-cover">
+                            <div class="p-8">
+                                <div class="bg-pink-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                                    <i class="fas fa-box-open text-pink-600 text-2xl"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-3">Packaging Solutions</h3>
+                                <p class="text-gray-600 mb-4">
+                                    Professional packaging services to ensure product safety. Custom packaging solutions for fragile and high-value items.
+                                </p>
+                                <ul class="space-y-2 text-sm text-gray-700">
+                                    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Custom packaging design</li>
+                                    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Protective materials</li>
+                                    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Eco-friendly options</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Service 6: Custom Clearance -->
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-2xl shadow-xl overflow-hidden card-hover">
+                            <img src="https://placehold.co/600x400/06b6d4/ffffff?text=Customs+Clearance" alt="Custom Clearance" class="w-full h-64 object-cover">
+                            <div class="p-8">
+                                <div class="bg-cyan-100 w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                                    <i class="fas fa-file-contract text-cyan-600 text-2xl"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-900 mb-3">Custom Clearance</h3>
+                                <p class="text-gray-600 mb-4">
+                                    Expert customs brokerage services for seamless international trade. Complete documentation and compliance support.
+                                </p>
+                                <ul class="space-y-2 text-sm text-gray-700">
+                                    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Documentation assistance</li>
+                                    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Duty calculation</li>
+                                    <li class="flex items-center"><i class="fas fa-check-circle text-green-500 mr-2"></i>Fast clearance process</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         PLATFORM CAPABILITIES
+    ======================================== -->
+    <section id="features" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    Platform <span class="gradient-text">Capabilities</span>
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Enterprise-grade features for modern logistics management
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                    <div class="bg-gradient-to-br from-blue-500 to-blue-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-layer-group text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Multi-Carrier Aggregation</h3>
+                    <p class="text-gray-600">
+                        Access 15+ premium courier partners through a single integration. Switch carriers seamlessly based on serviceability and cost.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                    <div class="bg-gradient-to-br from-green-500 to-green-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-balance-scale text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Intelligent Rate Comparison</h3>
+                    <p class="text-gray-600">
+                        Real-time rate engine compares pricing across all carriers to ensure you always get the best deal for every shipment.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                    <div class="bg-gradient-to-br from-purple-500 to-purple-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-code text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">API Integration</h3>
+                    <p class="text-gray-600">
+                        RESTful APIs with comprehensive documentation. Integrate FleetraShip into your ecommerce platform in minutes.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                    <div class="bg-gradient-to-br from-orange-500 to-orange-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Advanced Analytics</h3>
+                    <p class="text-gray-600">
+                        Detailed dashboards with shipment analytics, cost reports, and performance metrics to optimize your logistics.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                    <div class="bg-gradient-to-br from-pink-500 to-pink-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-robot text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Workflow Automation</h3>
+                    <p class="text-gray-600">
+                        Automate order processing, label generation, and tracking updates. Save hours of manual work every day.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg card-hover">
+                    <div class="bg-gradient-to-br from-cyan-500 to-cyan-600 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-map-marked-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Live Tracking</h3>
+                    <p class="text-gray-600">
+                        Real-time GPS tracking with automated customer notifications. Keep your customers informed at every step.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         HOW TO SHIP WITH FLEETRASHIP
+    ======================================== -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    How to Ship with <span class="gradient-text">FleetraShip</span>
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Get started in 4 simple steps
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="relative">
+                    <div class="bg-blue-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
+                        1
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-blue-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-user-plus text-blue-600 text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Sign Up</h3>
+                        <p class="text-gray-600">
+                            Create your free FleetraShip account in under 2 minutes. No credit card required.
+                        </p>
+                    </div>
+                    <div class="hidden md:block absolute top-8 left-full w-full h-1 bg-blue-200" style="width: calc(100% - 4rem);"></div>
+                </div>
+                
+                <div class="relative">
+                    <div class="bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
+                        2
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-plug text-green-600 text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Integrate</h3>
+                        <p class="text-gray-600">
+                            Connect your store via API, plugin, or manually upload orders through our dashboard.
+                        </p>
+                    </div>
+                    <div class="hidden md:block absolute top-8 left-full w-full h-1 bg-green-200" style="width: calc(100% - 4rem);"></div>
+                </div>
+                
+                <div class="relative">
+                    <div class="bg-purple-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
+                        3
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-purple-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-box text-purple-600 text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Book Shipment</h3>
+                        <p class="text-gray-600">
+                            Compare rates, select carrier, generate labels, and schedule pickup—all in one place.
+                        </p>
+                    </div>
+                    <div class="hidden md:block absolute top-8 left-full w-full h-1 bg-purple-200" style="width: calc(100% - 4rem);"></div>
+                </div>
+                
+                <div class="relative">
+                    <div class="bg-orange-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-6">
+                        4
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-orange-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-truck-loading text-orange-600 text-3xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Track & Deliver</h3>
+                        <p class="text-gray-600">
+                            Monitor shipments in real-time and keep customers updated with automated notifications.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         WHY CHOOSE FLEETRASHIP
+    ======================================== -->
+    <section id="why-us" class="py-20 bg-gradient-to-br from-blue-600 to-purple-700 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">
+                    Why Choose FleetraShip?
+                </h2>
+                <p class="text-xl text-blue-100">
+                    The logistics partner you can trust
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-6xl font-bold mb-2 text-yellow-300">₹24</div>
+                    <div class="text-lg font-semibold mb-2">Starting Price</div>
+                    <p class="text-blue-100">
+                        Industry-leading rates with no hidden charges
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="text-6xl font-bold mb-2 text-yellow-300">29K+</div>
+                    <div class="text-lg font-semibold mb-2">Pin Codes</div>
+                    <p class="text-blue-100">
+                        Unmatched reach across India
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="text-6xl font-bold mb-2 text-yellow-300">24hrs</div>
+                    <div class="text-lg font-semibold mb-2">Fastest Delivery</div>
+                    <p class="text-blue-100">
+                        Express shipping to major metros
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="text-6xl font-bold mb-2 text-yellow-300">150+</div>
+                    <div class="text-lg font-semibold mb-2">Countries</div>
+                    <p class="text-blue-100">
+                        Global shipping capabilities
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         BENEFITS FOR ECOMMERCE & BUSINESSES
+    ======================================== -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    Benefits for <span class="gradient-text">Ecommerce & Businesses</span>
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Everything you need to scale your shipping operations
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-12">
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center card-hover">
+                    <i class="fas fa-plug text-blue-600 text-5xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Easy Integration</h3>
+                    <p class="text-gray-600">
+                        Pre-built plugins for Shopify, WooCommerce, Magento, and custom APIs for any platform.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center card-hover">
+                    <i class="fas fa-undo text-green-600 text-5xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Hassle-Free Returns</h3>
+                    <p class="text-gray-600">
+                        Automated reverse logistics with quick processing and instant updates to your system.
+                    </p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-2xl shadow-lg text-center card-hover">
+                    <i class="fas fa-headset text-purple-600 text-5xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Dedicated Account Manager</h3>
+                    <p class="text-gray-600">
+                        Personal support for enterprise clients with priority resolution and custom solutions.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="bg-white p-8 rounded-2xl shadow-xl">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Trusted by Leading Courier Partners</h3>
+                <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 items-center opacity-70">
+                    <div class="text-center">
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <img src="https://placehold.co/120x60/e5e7eb/1f2937?text=BlueDart" alt="BlueDart" class="mx-auto">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <img src="https://placehold.co/120x60/e5e7eb/1f2937?text=Delhivery" alt="Delhivery" class="mx-auto">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <img src="https://placehold.co/120x60/e5e7eb/1f2937?text=FedEx" alt="FedEx" class="mx-auto">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <img src="https://placehold.co/120x60/e5e7eb/1f2937?text=DHL" alt="DHL" class="mx-auto">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <img src="https://placehold.co/120x60/e5e7eb/1f2937?text=Aramex" alt="Aramex" class="mx-auto">
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <div class="bg-gray-100 p-4 rounded-lg">
+                            <img src="https://placehold.co/120x60/e5e7eb/1f2937?text=DTDC" alt="DTDC" class="mx-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         QUICK COD REMITTANCE
+    ======================================== -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    Quick <span class="gradient-text">COD Remittance</span>
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Get your money faster with FleetraShip
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-gradient-to-br from-gray-100 to-gray-200 p-8 rounded-2xl text-center">
+                    <div class="text-gray-600 font-semibold mb-2">Industry Standard</div>
+                    <div class="text-4xl font-bold text-gray-900 mb-4">D+10 to D+15</div>
+                    <p class="text-gray-600">Days to receive COD payment</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-green-500 to-green-600 p-8 rounded-2xl text-center transform scale-110 shadow-2xl relative">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-gray-900 px-4 py-1 rounded-full text-sm font-bold">
+                        BEST OFFER
+                    </div>
+                    <div class="text-white font-semibold mb-2">FleetraShip Premium</div>
+                    <div class="text-5xl font-bold text-white mb-4">D+7 FREE</div>
+                    <p class="text-green-100">No extra charges!</p>
+                </div>
+                
+                <div class="bg-gradient-to-br from-blue-500 to-blue-600 p-8 rounded-2xl text-center">
+                    <div class="text-blue-100 font-semibold mb-2">Express Option</div>
+                    <div class="text-4xl font-bold text-white mb-4">D+3</div>
+                    <p class="text-blue-100">Available on request</p>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <p class="text-lg text-gray-700 mb-4">
+                    <i class="fas fa-check-circle text-green-500 mr-2"></i>
+                    Automated reconciliation · Direct bank transfer · Transparent reporting
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CLIENT TESTIMONIALS - SWIPER
+    ======================================== -->
+    <section id="testimonials" class="py-20 bg-gradient-to-br from-blue-50 to-purple-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    What Our <span class="gradient-text">Clients Say</span>
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Trusted by thousands of businesses across India
+                </p>
+            </div>
+            
+            <!-- Testimonials Swiper -->
+            <div class="swiper testimonialsSwiper pb-12">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="bg-white p-8 rounded-2xl shadow-xl">
+                            <div class="flex items-center mb-6">
+                                <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 font-bold text-xl mr-4">
+                                    RK
+                                </div>
+                                <div>
+                                    <div class="font-bold text-gray-900">Rajesh Kumar</div>
+                                    <div class="text-sm text-gray-600">Founder, StyleHub Fashion</div>
+                                </div>
+                            </div>
+                            <div class="text-yellow-400 mb-4">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-gray-700 italic">
+                                "FleetraShip transformed our logistics operations. We've reduced shipping costs by 40% and delivery times have improved significantly. The platform is incredibly easy to use and their support team is always responsive."
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="bg-white p-8 rounded-2xl shadow-xl">
+                            <div class="flex items-center mb-6">
+                                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center text-green-600 font-bold text-xl mr-4">
+                                    PS
+                                </div>
+                                <div>
+                                    <div class="font-bold text-gray-900">Priya Sharma</div>
+                                    <div class="text-sm text-gray-600">CEO, Organic Wellness Co.</div>
+                                </div>
+                            </div>
+                            <div class="text-yellow-400 mb-4">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-gray-700 italic">
+                                "As a D2C brand, reliable logistics is crucial for us. FleetraShip's real-time tracking and automated notifications have significantly improved our customer satisfaction. Highly recommend!"
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="bg-white p-8 rounded-2xl shadow-xl">
+                            <div class="flex items-center mb-6">
+                                <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center text-purple-600 font-bold text-xl mr-4">
+                                    AM
+                                </div>
+                                <div>
+                                    <div class="font-bold text-gray-900">Amit Mehta</div>
+                                    <div class="text-sm text-gray-600">Operations Head, TechGear India</div>
+                                </div>
+                            </div>
+                            <div class="text-yellow-400 mb-4">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-gray-700 italic">
+                                "The multi-carrier comparison feature is a game-changer. We can now choose the best rates for each shipment automatically. FleetraShip has streamlined our entire fulfillment process."
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <div class="bg-white p-8 rounded-2xl shadow-xl">
+                            <div class="flex items-center mb-6">
+                                <div class="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 font-bold text-xl mr-4">
+                                    SK
+                                </div>
+                                <div>
+                                    <div class="font-bold text-gray-900">Sneha Kapoor</div>
+                                    <div class="text-sm text-gray-600">Director, HomeDecor Plus</div>
+                                </div>
+                            </div>
+                            <div class="text-yellow-400 mb-4">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="text-gray-700 italic">
+                                "COD remittance in D+7 days has solved our biggest cash flow challenge. The platform's analytics also help us optimize our shipping strategy. Excellent service from the FleetraShip team!"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         SUPPORT & OPERATIONS
+    ======================================== -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    Support & <span class="gradient-text">Operations</span>
+                </h2>
+                <p class="text-xl text-gray-600">
+                    We're here to help you succeed
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="text-center p-8 bg-gradient-to-br from-blue-50 to-blue-100 rounded-2xl">
+                    <i class="fas fa-headphones-alt text-blue-600 text-5xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">24/7 Customer Support</h3>
+                    <p class="text-gray-700 mb-4">
+                        Round-the-clock assistance via phone, email, and live chat. Our support team is always ready to help.
+                    </p>
+                    <a href="#contact" class="text-blue-600 font-semibold hover:underline">Contact Support →</a>
+                </div>
+                
+                <div class="text-center p-8 bg-gradient-to-br from-green-50 to-green-100 rounded-2xl">
+                    <i class="fas fa-code-branch text-green-600 text-5xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Tech Integration Help</h3>
+                    <p class="text-gray-700 mb-4">
+                        Our technical team assists with API integration, plugin setup, and custom development needs.
+                    </p>
+                    <a href="#contact" class="text-green-600 font-semibold hover:underline">Get Tech Support →</a>
+                </div>
+                
+                <div class="text-center p-8 bg-gradient-to-br from-purple-50 to-purple-100 rounded-2xl">
+                    <i class="fas fa-balance-scale-right text-purple-600 text-5xl mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Weight Discrepancy Resolution</h3>
+                    <p class="text-gray-700 mb-4">
+                        Fair and transparent weight verification process with photo evidence and quick dispute resolution.
+                    </p>
+                    <a href="#contact" class="text-purple-600 font-semibold hover:underline">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FAQ SECTION
+    ======================================== -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    Frequently Asked <span class="gradient-text">Questions</span>
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Everything you need to know about FleetraShip
+                </p>
+            </div>
+            
+            <div class="space-y-4">
+                <details class="faq-item bg-white rounded-lg shadow-md">
+                    <summary class="p-6 cursor-pointer font-semibold text-gray-900 flex justify-between items-center">
+                        What is the minimum shipping rate with FleetraShip?
+                        <i class="fas fa-chevron-down text-blue-600"></i>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-700">
+                        FleetraShip offers shipping starting at just ₹24 for domestic shipments. The exact rate depends on factors like weight, dimensions, origin, destination, and selected courier partner. Our platform automatically compares rates across multiple carriers to ensure you get the best price.
+                    </div>
+                </details>
+                
+                <details class="faq-item bg-white rounded-lg shadow-md">
+                    <summary class="p-6 cursor-pointer font-semibold text-gray-900 flex justify-between items-center">
+                        How do I integrate FleetraShip with my ecommerce store?
+                        <i class="fas fa-chevron-down text-blue-600"></i>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-700">
+                        We offer multiple integration options including ready-made plugins for Shopify, WooCommerce, Magento, and other popular platforms. For custom platforms, you can use our RESTful API with comprehensive documentation. Our technical team provides free integration support to all customers.
+                    </div>
+                </details>
+                
+                <details class="faq-item bg-white rounded-lg shadow-md">
+                    <summary class="p-6 cursor-pointer font-semibold text-gray-900 flex justify-between items-center">
+                        What is the COD remittance cycle?
+                        <i class="fas fa-chevron-down text-blue-600"></i>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-700">
+                        FleetraShip offers industry-leading COD remittance at D+7 days absolutely FREE. This means you receive your cash-on-delivery payments within 7 days of successful delivery. Express remittance options (D+3) are also available on request for faster cash flow.
+                    </div>
+                </details>
+                
+                <details class="faq-item bg-white rounded-lg shadow-md">
+                    <summary class="p-6 cursor-pointer font-semibold text-gray-900 flex justify-between items-center">
+                        Which courier partners does FleetraShip work with?
+                        <i class="fas fa-chevron-down text-blue-600"></i>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-700">
+                        We partner with 15+ premium courier companies including BlueDart, Delhivery, FedEx, DHL, Aramex, DTDC, and many more. Our platform aggregates all these carriers, allowing you to compare rates and select the best option for each shipment based on your requirements.
+                    </div>
+                </details>
+                
+                <details class="faq-item bg-white rounded-lg shadow-md">
+                    <summary class="p-6 cursor-pointer font-semibold text-gray-900 flex justify-between items-center">
+                        Do you offer international shipping?
+                        <i class="fas fa-chevron-down text-blue-600"></i>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-700">
+                        Yes! FleetraShip supports international shipping to 150+ countries through our air freight and ocean freight services. We also provide customs clearance assistance, documentation support, and end-to-end tracking for all international shipments.
+                    </div>
+                </details>
+                
+                <details class="faq-item bg-white rounded-lg shadow-md">
+                    <summary class="p-6 cursor-pointer font-semibold text-gray-900 flex justify-between items-center">
+                        Is there a minimum order volume requirement?
+                        <i class="fas fa-chevron-down text-blue-600"></i>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-700">
+                        No, there is no minimum order volume requirement. Whether you ship 10 orders per month or 10,000, you can use FleetraShip. We serve businesses of all sizes—from startups to large enterprises. Volume-based pricing discounts are available for high-volume shippers.
+                    </div>
+                </details>
+                
+                <details class="faq-item bg-white rounded-lg shadow-md">
+                    <summary class="p-6 cursor-pointer font-semibold text-gray-900 flex justify-between items-center">
+                        How does the weight discrepancy process work?
+                        <i class="fas fa-chevron-down text-blue-600"></i>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-700">
+                        In case of weight discrepancies, courier partners provide photo evidence of the shipment on weighing scale. You can review this evidence in your dashboard and raise a dispute if needed. Our team ensures fair resolution and works to minimize such issues through proper packaging guidelines.
+                    </div>
+                </details>
+                
+                <details class="faq-item bg-white rounded-lg shadow-md">
+                    <summary class="p-6 cursor-pointer font-semibold text-gray-900 flex justify-between items-center">
+                        What kind of customer support do you provide?
+                        <i class="fas fa-chevron-down text-blue-600"></i>
+                    </summary>
+                    <div class="px-6 pb-6 text-gray-700">
+                        FleetraShip offers 24/7 customer support via phone, email, and live chat. Enterprise customers get dedicated account managers for personalized assistance. We also provide technical integration support, training resources, and comprehensive documentation.
+                    </div>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         CONTACT & LEAD FORM
+    ======================================== -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">
+                    Get Started with <span class="gradient-text">FleetraShip</span>
+                </h2>
+                <p class="text-xl text-gray-600">
+                    Let's discuss how we can optimize your logistics
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <!-- Contact Information -->
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 p-3 rounded-lg mr-4">
+                                <i class="fas fa-map-marker-alt text-blue-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-gray-900">Head Office</div>
+                                <div class="text-gray-600">123 Business Tower, MG Road<br>Mumbai, Maharashtra 400001, India</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-green-100 p-3 rounded-lg mr-4">
+                                <i class="fas fa-phone text-green-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-gray-900">Phone</div>
+                                <div class="text-gray-600">+91 1800-123-4567 (Toll Free)<br>+91 22-1234-5678</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 p-3 rounded-lg mr-4">
+                                <i class="fas fa-envelope text-purple-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-gray-900">Email</div>
+                                <div class="text-gray-600">support@fleetraship.com<br>sales@fleetraship.com</div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-orange-100 p-3 rounded-lg mr-4">
+                                <i class="fas fa-clock text-orange-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-gray-900">Business Hours</div>
+                                <div class="text-gray-600">24/7 Support Available<br>Monday - Sunday (All Days)</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-semibold text-gray-900 mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-700 transition">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="bg-blue-400 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-500 transition">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="bg-blue-700 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-blue-800 transition">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="bg-pink-600 text-white w-10 h-10 rounded-full flex items-center justify-center hover:bg-pink-700 transition">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Lead Form -->
+                <div>
+                    <div class="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-6">Request a Demo</h3>
+                        
+                        <form class="space-y-4">
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Full Name *</label>
+                                <input type="text" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Enter your name">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Business Email *</label>
+                                <input type="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="you@company.com">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Phone Number *</label>
+                                <input type="tel" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="+91 98765 43210">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Company Name</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Your company">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Monthly Shipment Volume</label>
+                                <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                                    <option>Select volume</option>
+                                    <option>0-100 shipments</option>
+                                    <option>100-500 shipments</option>
+                                    <option>500-1000 shipments</option>
+                                    <option>1000-5000 shipments</option>
+                                    <option>5000+ shipments</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2">Your Requirements</label>
+                                <textarea rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Tell us about your logistics needs..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-blue-600 text-white py-4 rounded-lg font-bold text-lg hover:bg-blue-700 transition shadow-lg">
+                                Submit & Our Team Will Contact You
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================
+         FOOTER
+    ======================================== -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-shipping-fast text-blue-500 text-3xl mr-2"></i>
+                        <span class="text-2xl font-bold">Fleetra<span class="text-blue-500">Ship</span></span>
+                    </div>
+                    <p class="text-gray-400 mb-4">
+                        Smart logistics solutions for modern businesses. Shipping made simple, reliable, and affordable.
+                    </p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Services</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#services" class="hover:text-white transition">Ground Shipping</a></li>
+                        <li><a href="#services" class="hover:text-white transition">Air Freight</a></li>
+                        <li><a href="#services" class="hover:text-white transition">Ocean Freight</a></li>
+                        <li><a href="#services" class="hover:text-white transition">Warehousing</a></li>
+                        <li><a href="#services" class="hover:text-white transition">Packaging</a></li>
+                        <li><a href="#services" class="hover:text-white transition">Custom Clearance</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">About Us</a></li>
+                        <li><a href="#" class="hover:text-white transition">Careers</a></li>
+                        <li><a href="#" class="hover:text-white transition">Blog</a></li>
+                        <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+                        <li><a href="#" class="hover:text-white transition">Partners</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Legal</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-white transition">Shipping Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition">Refund Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 FleetraShip. All rights reserved. Built with precision for modern logistics.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Swiper.js JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <script>
+        // Services Swiper
+        const servicesSwiper = new Swiper('.servicesSwiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+        
+        // Testimonials Swiper
+        const testimonialsSwiper = new Swiper('.testimonialsSwiper', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            breakpoints: {
+                768: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+        
+        // Counter Animation
+        function animateCounter(element) {
+            const target = parseInt(element.getAttribute('data-target'));
+            const duration = 2000;
+            const increment = target / (duration / 16);
+            let current = 0;
+            
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.textContent = target.toLocaleString();
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.floor(current).toLocaleString();
+                }
+            }, 16);
+        }
+        
+        // Intersection Observer for Counter Animation
+        const observerOptions = {
+            threshold: 0.5,
+            rootMargin: '0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counters = entry.target.querySelectorAll('.counter[data-target]');
+                    counters.forEach(counter => {
+                        animateCounter(counter);
+                    });
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        // Observe stats section
+        const statsSection = document.querySelector('.counter').closest('section');
+        if (statsSection) {
+            observer.observe(statsSection);
+        }
+        
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
